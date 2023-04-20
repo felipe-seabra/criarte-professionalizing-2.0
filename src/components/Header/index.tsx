@@ -13,16 +13,17 @@ interface Props {
 }
 
 const NAV_LINKS = [
-  { path: '/', label: 'Login' }
-  // { path: '/about', label: 'Sobre' },
-  // { path: '/projects', label: 'Projetos' },
-  // { path: '/contact', label: 'Contato' },
+  { path: '/', label: 'Início' },
+  { path: '/about', label: 'Sobre' },
+  { path: '/courses', label: 'Cursos' },
+  { path: '/contact', label: 'Contato' }
 ];
 
 const Header: React.FC<Props> = ({ toggleTheme }) => {
   const location = useLocation();
   const { colors, title } = useContext(ThemeContext);
   const [activeLink, setActiveLink] = useState('/');
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     setActiveLink(location.pathname);
@@ -38,8 +39,8 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
               <span> Seabra</span>
             </Link>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="responsive-navbar-nav">
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={() => setOpen(!open)} />
+          <Navbar.Collapse in={open} id="responsive-navbar-nav">
             <Nav className="container header__links">
               {NAV_LINKS.map((link) => (
                 <Nav.Link
@@ -47,23 +48,25 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
                   as={Link}
                   to={link.path}
                   className="navlink"
+                  onClick={() => setOpen(!open)}
                   active={activeLink === link.path}>
                   {link.label}
                 </Nav.Link>
               ))}
             </Nav>
+            <Switch
+              className='header__switch'
+              onChange={toggleTheme}
+              checked={title === 'dark'}
+              checkedIcon={false}
+              uncheckedIcon={false}
+              height={10}
+              width={40}
+              handleDiameter={20}
+              offColor={shade(0.15, colors.primary)}
+              onColor={colors.secundary}
+            />
           </Navbar.Collapse>
-          <Switch
-            onChange={toggleTheme}
-            checked={title === 'dark'}
-            checkedIcon={false}
-            uncheckedIcon={false}
-            height={10}
-            width={40}
-            handleDiameter={20}
-            offColor={shade(0.15, colors.primary)}
-            onColor={colors.secundary}
-          />
         </Navbar>
       </Container>
     </header>

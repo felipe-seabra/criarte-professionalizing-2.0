@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   height: 70px;
-  background: ${(props) => props.theme.colors.primary}};
+  background: ${(props) => props.theme.colors.primary};
   padding: 0 30px;
 
   .header__logo {
@@ -15,9 +15,10 @@ export const Container = styled.div`
 
   .header__links {
     display: flex;
-    align-items: center;
+    align-items: ${window.matchMedia('(max-width: 768px)').matches ? 'flex-start' : 'center'};
     justify-content: flex-end;
     padding-right: 2em;
+    padding: ${window.matchMedia('(max-width: 768px)').matches ? '10px' : '0'};
     font-size: 1.2em;
   }
 

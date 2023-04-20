@@ -8,7 +8,8 @@ import { shade } from 'polished';
 
 import { Container } from './styles';
 
-import logo from '../../images/logo-white.png'
+import logoWhite from '../../images/logo-white.png'
+import logoBlue from '../../images/logo-blue.png'
 
 interface Props {
   toggleTheme(): void;
@@ -37,18 +38,20 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
     }
   }
 
+  const logoAccordingToTheme = () => (title === 'dark') ? logoWhite : logoBlue
+
   return (
     <header>
       <Container>
         <Navbar collapseOnSelect expand="md">
           <Navbar.Brand>
             <Link to="/">
-              <img className="header__logo" src={ logo } alt="Logo Colégio Criarte" />
+              <img className="header__logo" src={ logoAccordingToTheme() } alt="Logo Colégio Criarte" />
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={() => setOpen(!open)} />
           <Navbar.Collapse in={open} id="responsive-navbar-nav">
-            <Nav className="container header__links">
+            <Nav className="container-fluid header__links">
               {NAV_LINKS.map((link) => (
                 <Nav.Link
                   key={link.path}

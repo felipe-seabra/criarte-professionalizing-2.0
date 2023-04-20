@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   height: 120px;
-  background: ${(props) => props.theme.colors.primary};
+  // background: ${(props) => props.theme.colors.primary};
   padding: 0 30px;
 
   .header__logo {
@@ -13,13 +13,12 @@ export const Container = styled.div`
     display: flex;
     align-items: ${window.matchMedia('(max-width: 768px)').matches ? 'start' : 'center'};
     justify-content: flex-end;
-    padding-right: 2em;
-    padding: ${window.matchMedia('(max-width: 768px)').matches ? '10px' : '0'};
+    padding-right: ${window.matchMedia('(max-width: 768px)').matches ? '2em' : '0'};
     font-size: 1.2em;
   }
 
   .navlink {
-    color: #fff;
+    color: ${(props) => props.theme.colors.text};
     text-transform: uppercase;
     transition: transform 0.4s;
   }

@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Switch from 'react-switch';
 import { ThemeContext } from 'styled-components';
 import { shade } from 'polished';
+import setPageTitle from '../../utils/setPageTitle';
 
 import { Container } from './styles';
 
@@ -16,9 +17,9 @@ interface Props {
 
 const NAV_LINKS = [
   { path: '/', label: 'Início' },
-  { path: '/about', label: 'Sobre' },
-  { path: '/courses', label: 'Cursos' },
-  { path: '/contact', label: 'Contato' }
+  { path: '/sobre', label: 'Sobre' },
+  { path: '/cursos', label: 'Cursos' },
+  { path: '/contato', label: 'Contato' }
 ];
 
 function Header({ toggleTheme }: Props) {
@@ -29,6 +30,8 @@ function Header({ toggleTheme }: Props) {
 
   useEffect(() => {
     setActiveLink(location.pathname);
+
+    setPageTitle('Colégio Criarte - Início');
   }, [location]);
 
   const handleClick = () => {

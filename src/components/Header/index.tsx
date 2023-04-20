@@ -5,7 +5,6 @@ import Navbar from 'react-bootstrap/Navbar';
 import Switch from 'react-switch';
 import { ThemeContext } from 'styled-components';
 import { shade } from 'polished';
-import setPageTitle from '../../utils/setPageTitle';
 
 import { Container } from './styles';
 
@@ -30,8 +29,6 @@ function Header({ toggleTheme }: Props) {
 
   useEffect(() => {
     setActiveLink(location.pathname);
-
-    setPageTitle('Colégio Criarte - Início');
   }, [location]);
 
   const handleClick = () => {

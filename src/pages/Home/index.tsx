@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import setPageTitle from '../../utils/setPageTitle';
+
 import { Container } from './styles';
 
 function Home() {
+  useEffect(() => {
+    setPageTitle('Início - Colégio Criarte');
+  }, []);
+
   return (
     <Container>
       <section className="home">

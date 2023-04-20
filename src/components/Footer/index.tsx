@@ -5,7 +5,11 @@ import { Container } from './styles';
 const Footer: React.FC = () => {
   return (
     <footer>
-      <Container>Felipe S. - &copy; 2022</Container>
+      <Container>
+        <div>
+          Felipe S. - &copy; 2022
+        </div>
+      </Container>
     </footer>
   );
 };

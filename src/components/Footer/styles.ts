@@ -1,10 +1,23 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  height: 7.5vh;
-  color: ${(props) => props.theme.colors.secundary};
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0 30px;
+    z-index: 999;
+
+    footer {
+      min-height: 7.5vh;
+    }
+
+    div {
+      color: ${(props) => props.theme.colors.secundary};
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 999;
+    }
+  }
 `;

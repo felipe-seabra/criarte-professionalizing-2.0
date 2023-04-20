@@ -1,9 +1,14 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  height: 12.5vh;
-  // background: ${(props) => props.theme.colors.primary};
+  position: absolute;
+  width: 100%;
   padding: 0 30px;
+  z-index: 999;
+  
+  header {
+    height: 12.5vh;
+  }
 
   .header__logo {
     width: 130px;

@@ -8,8 +8,7 @@ import { shade } from 'polished';
 
 import { Container } from './styles';
 
-import logoWhite from '../../images/logo-white.png'
-import logoBlue from '../../images/logo-blue.png'
+import { logoWhite, logoBlue } from '../../images';
 
 interface Props {
   toggleTheme(): void;

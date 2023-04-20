@@ -1,21 +1,17 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  height: 70px;
+  height: 120px;
   background: ${(props) => props.theme.colors.primary};
   padding: 0 30px;
 
   .header__logo {
-    font-size: 1.5em;
-    cursor: pointer;
-    letter-spacing: 1px;
-    text-decoration: none;
-    color: #fff;
+    width: 130px;
   }
 
   .header__links {
     display: flex;
-    align-items: ${window.matchMedia('(max-width: 768px)').matches ? 'flex-start' : 'center'};
+    align-items: ${window.matchMedia('(max-width: 768px)').matches ? 'start' : 'center'};
     justify-content: flex-end;
     padding-right: 2em;
     padding: ${window.matchMedia('(max-width: 768px)').matches ? '10px' : '0'};
@@ -24,6 +20,8 @@ export const Container = styled.div`
 
   .navlink {
     color: #fff;
+    text-transform: uppercase;
+    transition: transform 0.4s;
   }
 
   .navlink:hover {

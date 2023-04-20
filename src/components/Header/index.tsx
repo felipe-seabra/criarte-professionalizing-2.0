@@ -8,6 +8,8 @@ import { shade } from 'polished';
 
 import { Container } from './styles';
 
+import logo from '../../images/logo-white.png'
+
 interface Props {
   toggleTheme(): void;
 }
@@ -29,14 +31,19 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
     setActiveLink(location.pathname);
   }, [location]);
 
+  const handleClick = () => {
+    if (window.matchMedia('(max-width: 768px)').matches){
+      setOpen(!open)
+    }
+  }
+
   return (
     <header>
       <Container>
         <Navbar collapseOnSelect expand="md">
           <Navbar.Brand>
-            <Link to="/" className="header__logo">
-              Felipe
-              <span> Seabra</span>
+            <Link to="/">
+              <img className="header__logo" src={ logo } alt="Logo Colégio Criarte" />
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={() => setOpen(!open)} />
@@ -48,7 +55,7 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
                   as={Link}
                   to={link.path}
                   className="navlink"
-                  onClick={() => setOpen(!open)}
+                  onClick={handleClick}
                   active={activeLink === link.path}>
                   {link.label}
                 </Nav.Link>

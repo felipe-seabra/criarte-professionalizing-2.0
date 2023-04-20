@@ -3,7 +3,9 @@ import styled from 'styled-components';
 export const Container = styled.div`
   position: absolute;
   width: 100%;
-  padding: 0 30px;
+  padding-left: 30px;
+  text-align: right;
+  padding-right: ${window.matchMedia('(max-width: 768px)').matches ? '2em' : '30px'};
   z-index: 999;
   
   header {
@@ -16,9 +18,9 @@ export const Container = styled.div`
 
   .header__links {
     display: flex;
-    align-items: start;
+    align-items: flex-end;
     justify-content: flex-end;
-    padding-right: 2em;
+    padding-right: ${window.matchMedia('(max-width: 768px)').matches ? '0' : '2em'};
     font-size: 1.2em;
   }
 

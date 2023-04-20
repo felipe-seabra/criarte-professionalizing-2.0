@@ -8,7 +8,7 @@ export const Container = styled.div`
   background: url(${bgHome}) no-repeat center/cover;
   display: flex;
   align-items: center;
-  padding: 0 10%;
+  padding: ${window.matchMedia('(max-width: 768px)').matches ? '0 5%' : '0 10%'};
 
   color: ${(props) => props.theme.colors.text};
 
@@ -16,7 +16,7 @@ export const Container = styled.div`
     display: flex;
     height: 100vh;
     align-items: center;
-    padding: 0 10%;
+    padding: ${window.matchMedia('(max-width: 768px)').matches ? '0' : '0 10%'};
   }
 
   .home-content {
@@ -24,26 +24,26 @@ export const Container = styled.div`
   }
 
   h1 {
-    font-size: 3.6rem;
+    font-size: 3.6em;
     font-weight: 700;
     line-height: 4rem;
   }
 
   h3 {
-    font-size: 2.4rem;
+    font-size: 2.4em;
     font-weight: 700;
     color: ${(props) => props.theme.colors.secundary};
   }
 
   p {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     margin: 1.5rem 0;
   }
 
   .home-btn {
     display: flex;
     justify-content: space-between;
-    width: 345px;
+    max-width: 345px;
     height: 50px;
   }
 
@@ -55,7 +55,7 @@ export const Container = styled.div`
     width: 150px;
     height: 100%;
     background: ${(props) => props.theme.colors.secundary};
-    border: 2px solid ${(props) => props.theme.colors.primary};
+    border: 2px solid ${(props) => props.theme.colors.secundary};
     border-radius: 8px;
     font-size: 1.2rem;
     color: ${(props) => props.theme.colors.primary};
@@ -74,12 +74,10 @@ export const Container = styled.div`
 
   .home-btn a:nth-child(2) {
     background: transparent;
-    border: 2px solid ${(props) => props.theme.colors.secundary};
     color: ${(props) => props.theme.colors.secundary};
   }
 
   .home-btn a:nth-child(2):hover {
-    border: 2px solid ${(props) => props.theme.colors.primary};
     color: ${(props) => props.theme.colors.primary};
   }
 

@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer>
       <Container>
-        <div>Felipe S. - &copy; 2022</div>
+        <div>Colégio Criarte. - &copy; 2023</div>
       </Container>
     </footer>
   );

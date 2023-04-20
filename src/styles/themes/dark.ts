@@ -3,9 +3,9 @@ const dark = {
 
   colors: {
     primary: '#101010',
-    secundary: '#DC3545',
+    secundary: '#00ABF0',
 
-    background: '#191919',
+    background: '#081B29',
     text: '#fff',
     title: '#fff'
   }

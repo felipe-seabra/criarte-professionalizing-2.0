@@ -35,8 +35,8 @@
     "react/function-component-definition": [
       2,
       {
-        "namedComponents": ["named", "arrow-function"],
-        "unnamedComponents": ["unamed", "arrow-function"]
+        "named": ["always", "never"],
+        "arrow-function": ["always", "never", "as-needed"]
       }
     ],
     "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }]

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from './styles';
 
-const Home: React.FC = () => {
+function Home() {
   return (
     <Container>
       <section className="home">
@@ -14,13 +14,13 @@ const Home: React.FC = () => {
             Radiologia e Enfermagem.
           </p>
           <div className="home-btn">
-            <a href="#">Saber Mais</a>
-            <a href="#">Contato</a>
+            <a href="/">Saber Mais</a>
+            <a href="/">Contato</a>
           </div>
         </div>
       </section>
     </Container>
   );
-};
+}
 
 export default Home;

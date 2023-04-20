@@ -9,9 +9,9 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   padding: 0 10%;
-  
+
   color: ${(props) => props.theme.colors.text};
-  
+
   .home {
     display: flex;
     height: 100vh;

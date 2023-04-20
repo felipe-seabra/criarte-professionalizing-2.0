@@ -21,7 +21,7 @@ const NAV_LINKS = [
   { path: '/contact', label: 'Contato' }
 ];
 
-const Header: React.FC<Props> = ({ toggleTheme }) => {
+function Header({ toggleTheme }: Props) {
   const location = useLocation();
   const { colors, title } = useContext(ThemeContext);
   const [activeLink, setActiveLink] = useState('/');
@@ -32,12 +32,12 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
   }, [location]);
 
   const handleClick = () => {
-    if (window.matchMedia('(max-width: 768px)').matches){
-      setOpen(!open)
+    if (window.matchMedia('(max-width: 768px)').matches) {
+      setOpen(!open);
     }
-  }
+  };
 
-  const logoAccordingToTheme = () => (title === 'dark') ? logoWhite : logoBlue
+  const logoAccordingToTheme = () => (title === 'dark' ? logoWhite : logoBlue);
 
   return (
     <header>
@@ -45,10 +45,17 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
         <Navbar collapseOnSelect expand="md">
           <Navbar.Brand>
             <Link to="/">
-              <img className="header__logo" src={ logoAccordingToTheme() } alt="Logo Colégio Criarte" />
+              <img
+                className="header__logo"
+                src={logoAccordingToTheme()}
+                alt="Logo Colégio Criarte"
+              />
             </Link>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" onClick={() => setOpen(!open)} />
+          <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+            onClick={() => setOpen(!open)}
+          />
           <Navbar.Collapse in={open} id="responsive-navbar-nav">
             <Nav className="container-fluid header__links">
               {NAV_LINKS.map((link) => (
@@ -64,7 +71,7 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
               ))}
             </Nav>
             <Switch
-              className='header__switch'
+              className="header__switch"
               onChange={toggleTheme}
               checked={title === 'dark'}
               checkedIcon={false}
@@ -80,6 +87,6 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
       </Container>
     </header>
   );
-};
+}
 
 export default Header;

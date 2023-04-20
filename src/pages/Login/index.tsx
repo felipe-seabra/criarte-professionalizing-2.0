@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Container } from './styles';
 
-const Login: React.FC = () => {
+function Login() {
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
 
@@ -47,6 +47,6 @@ const Login: React.FC = () => {
       </div>
     </Container>
   );
-};
+}
 
 export default Login;

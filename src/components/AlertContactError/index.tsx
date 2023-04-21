@@ -20,7 +20,6 @@ function AlertContactError() {
             <br />
           </p>
           <p>Agradecemos sua compreensão e esperamos retornar em breve.</p>
-          <p className="mb-0">Retornaremos em breve.</p>
         </Alert>
         <div className="container-fluid mt-5">
           <Link to="/" className="global-btn">

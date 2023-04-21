@@ -5,6 +5,7 @@ import About from '../../pages/About';
 import Courses from '../../pages/Courses';
 import Contact from '../../pages/Contact';
 import Thanks from '../../pages/Thanks';
+import Sorry from '../../pages/Sorry';
 
 function Content() {
   return (
@@ -14,6 +15,7 @@ function Content() {
       <Route path="/cursos" element={<Courses />} />
       <Route path="/contato" element={<Contact />} />
       <Route path="/obrigado" element={<Thanks />} />
+      <Route path="/erro" element={<Sorry />} />
       <Route path="*" element={<h1>Error 404 - Page Not Found</h1>} />
     </Routes>
   );

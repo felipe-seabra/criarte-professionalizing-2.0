@@ -5,6 +5,8 @@ import { createContext, ReactNode, useMemo, useState } from 'react';
 interface AppContextValue {
   submitForm: boolean;
   setSubmitForm: React.Dispatch<React.SetStateAction<boolean>>;
+  errorSubmitForm: boolean;
+  setErrorSubmitForm: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 interface AppContextProviderProps {
@@ -13,16 +15,21 @@ interface AppContextProviderProps {
 
 export const AppContext = createContext<AppContextValue>({
   submitForm: false,
-  setSubmitForm: () => {}
+  setSubmitForm: () => {},
+  errorSubmitForm: false,
+  setErrorSubmitForm: () => {}
 });
 
 export function AppContextProvider({ children }: AppContextProviderProps) {
   const [submitForm, setSubmitForm] = useState(false);
+  const [errorSubmitForm, setErrorSubmitForm] = useState(false);
 
   const contextValue = useMemo(() => {
     return {
       submitForm,
-      setSubmitForm
+      setSubmitForm,
+      errorSubmitForm,
+      setErrorSubmitForm
     };
   }, [submitForm, setSubmitForm]);
 

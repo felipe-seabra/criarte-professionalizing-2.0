@@ -10,7 +10,7 @@ import phoneMask from '../../utils/phoneMask';
 import { IFormValues } from '../../interfaces';
 
 function Form() {
-  const { setSubmitForm } = useContext(AppContext);
+  const { setSubmitForm, setErrorSubmitForm } = useContext(AppContext);
 
   const options = [
     'Selecione um Curso',
@@ -29,7 +29,6 @@ function Form() {
   });
 
   const handleChangeOptions = (event: ChangeEvent<HTMLSelectElement>): void => {
-    console.log(verifyBtn(formValues));
     const { name, value } = event.target;
 
     setFormValues({ ...formValues, [name]: value });
@@ -41,7 +40,6 @@ function Form() {
 
   const sendEmail = (e: FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
-    console.log(e);
     emailjs
       .sendForm(
         'umbler',
@@ -51,11 +49,12 @@ function Form() {
       )
       .then((result: EmailJSResponseStatus) => {
         console.log(result.text);
+        handleFormSubmit();
       })
       .catch((error: EmailJSResponseStatus) => {
         console.log(error.text);
+        setErrorSubmitForm(true);
       });
-    handleFormSubmit();
   };
 
   return (
@@ -141,7 +140,7 @@ function Form() {
             label="Aceito enviar meus dados."
             className="mb-3"
             type="checkbox"
-            checked={formValues.checkbox}
+            readOnly={formValues.checkbox}
             name="checkbox"
             onClick={() =>
               setFormValues({ ...formValues, checkbox: !formValues.checkbox })

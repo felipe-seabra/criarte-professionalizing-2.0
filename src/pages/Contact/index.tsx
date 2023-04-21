@@ -7,13 +7,22 @@ import { AppContext } from '../../context/provider';
 import Form from '../../components/Form';
 
 function Contact() {
-  const { submitForm } = useContext(AppContext);
+  const { submitForm, errorSubmitForm } = useContext(AppContext);
 
   useEffect(() => {
     setPageTitle('Contato - Colégio Criarte');
   }, []);
 
-  return <Container>{!submitForm ? <Form /> : <Navigate to="/obrigado" />}</Container>;
+  let content;
+  if (!submitForm) {
+    content = <Form />;
+  } else if (!errorSubmitForm) {
+    content = <Navigate to="/obrigado" />;
+  } else {
+    content = <Navigate to="/erro" />;
+  }
+
+  return <Container>{content}</Container>;
 }
 
 export default Contact;

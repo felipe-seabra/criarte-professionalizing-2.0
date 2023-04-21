@@ -1,5 +1,10 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 800px;
+  position: relative;
+  .form {
+    display: flex;
+    flex-direction: column;
+    min-width: 50vw;
+  }
 `;

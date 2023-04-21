@@ -78,7 +78,7 @@ function Form() {
     <Container>
       <div className="pt-5 mt-5 mb-5">
         <h2 className="text-center mb-4 pt-5">Formulário</h2>
-        <BootstrapForm className="container-fluid" onSubmit={handleFormSubmitIsLoading}>
+        <BootstrapForm className="form" onSubmit={handleFormSubmitIsLoading}>
           <>
             {/* input courses options */}
             <RequiredField isValid={verifyFieldOption(formValues.option)} />

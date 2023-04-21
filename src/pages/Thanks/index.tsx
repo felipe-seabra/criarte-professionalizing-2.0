@@ -6,7 +6,7 @@ import AlertContactSucess from '../../components/AlertContactSucess';
 
 function Thanks() {
   useEffect(() => {
-    setPageTitle('Sobre - Colégio Criarte');
+    setPageTitle('Obrigado - Colégio Criarte');
   }, []);
 
   return (

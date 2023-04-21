@@ -1,4 +1,6 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import setPageTitle from '../../utils/setPageTitle';
 
 import { Container } from './styles';
@@ -20,8 +22,8 @@ function Home() {
             Radiologia e Enfermagem.
           </p>
           <div className="home-btn">
-            <a href="/">Saber Mais</a>
-            <a href="/">Contato</a>
+            <Link to="/sobre">Saber Mais</Link>
+            <Link to="/contato">Contato</Link>
           </div>
         </div>
       </section>

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import setPageTitle from '../../utils/setPageTitle';
 
 import { Container } from './styles';
+import AlertContactSucess from '../../components/AlertContactSucess';
 
 function Thanks() {
   useEffect(() => {
@@ -10,7 +11,7 @@ function Thanks() {
 
   return (
     <Container>
-      <div>Thanks</div>
+      <AlertContactSucess />
     </Container>
   );
 }

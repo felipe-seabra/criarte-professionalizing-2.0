@@ -7,6 +7,8 @@ interface AppContextValue {
   setSubmitForm: React.Dispatch<React.SetStateAction<boolean>>;
   errorSubmitForm: boolean;
   setErrorSubmitForm: React.Dispatch<React.SetStateAction<boolean>>;
+  isLoading: boolean;
+  setIsLoading: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 interface AppContextProviderProps {
@@ -17,21 +19,33 @@ export const AppContext = createContext<AppContextValue>({
   submitForm: false,
   setSubmitForm: () => {},
   errorSubmitForm: false,
-  setErrorSubmitForm: () => {}
+  setErrorSubmitForm: () => {},
+  isLoading: false,
+  setIsLoading: () => {}
 });
 
 export function AppContextProvider({ children }: AppContextProviderProps) {
   const [submitForm, setSubmitForm] = useState(false);
   const [errorSubmitForm, setErrorSubmitForm] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const contextValue = useMemo(() => {
     return {
       submitForm,
       setSubmitForm,
       errorSubmitForm,
-      setErrorSubmitForm
+      setErrorSubmitForm,
+      isLoading,
+      setIsLoading
     };
-  }, [submitForm, setSubmitForm]);
+  }, [
+    submitForm,
+    setSubmitForm,
+    errorSubmitForm,
+    setErrorSubmitForm,
+    isLoading,
+    setIsLoading
+  ]);
 
   return <AppContext.Provider value={contextValue}>{children}</AppContext.Provider>;
 }

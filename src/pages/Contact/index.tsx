@@ -5,16 +5,19 @@ import setPageTitle from '../../utils/setPageTitle';
 import { Container } from './styles';
 import { AppContext } from '../../context/provider';
 import Form from '../../components/Form';
+import Loading from '../../components/Loading';
 
 function Contact() {
-  const { submitForm, errorSubmitForm } = useContext(AppContext);
+  const { submitForm, errorSubmitForm, isLoading } = useContext(AppContext);
 
   useEffect(() => {
     setPageTitle('Contato - Colégio Criarte');
   }, []);
 
   let content;
-  if (!submitForm) {
+  if (isLoading) {
+    content = <Loading />;
+  } else if (!submitForm) {
     content = <Form />;
   } else if (!errorSubmitForm) {
     content = <Navigate to="/obrigado" />;

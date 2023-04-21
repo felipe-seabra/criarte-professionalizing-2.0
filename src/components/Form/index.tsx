@@ -10,7 +10,7 @@ import phoneMask from '../../utils/phoneMask';
 import { IFormValues } from '../../interfaces';
 
 function Form() {
-  const { setSubmitForm, setErrorSubmitForm } = useContext(AppContext);
+  const { setSubmitForm, setErrorSubmitForm, setIsLoading } = useContext(AppContext);
 
   const options = [
     'Selecione um Curso',
@@ -40,6 +40,7 @@ function Form() {
 
   const sendEmail = (e: FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
+
     emailjs
       .sendForm(
         'umbler',
@@ -50,18 +51,25 @@ function Form() {
       .then((result: EmailJSResponseStatus) => {
         console.log(result.text);
         handleFormSubmit();
+        setIsLoading(false);
       })
       .catch((error: EmailJSResponseStatus) => {
         console.log(error.text);
         setErrorSubmitForm(true);
+        setIsLoading(false);
       });
+  };
+
+  const handleFormSubmitIsLoading = (e: FormEvent<HTMLFormElement>): void => {
+    setIsLoading(true);
+    sendEmail(e);
   };
 
   return (
     <Container>
       <div className="pt-5 mt-5 mb-5">
         <h2 className="text-center mb-4 pt-5">Formulário</h2>
-        <BootstrapForm className="container-fluid" onSubmit={sendEmail}>
+        <BootstrapForm className="container-fluid" onSubmit={handleFormSubmitIsLoading}>
           <>
             {/* input courses options */}
             <FloatingLabel

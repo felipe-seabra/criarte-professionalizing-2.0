@@ -17,7 +17,7 @@ export const AppContext = createContext<AppContextValue>({
 });
 
 export function AppContextProvider({ children }: AppContextProviderProps) {
-  const [submitForm, setSubmitForm] = useState(true);
+  const [submitForm, setSubmitForm] = useState(false);
 
   const contextValue = useMemo(() => {
     return {

@@ -4,6 +4,7 @@ import setPageTitle from '../../utils/setPageTitle';
 
 import { Container } from './styles';
 import { AppContext } from '../../context/provider';
+import Form from '../../components/Form';
 
 function Contact() {
   const { submitForm } = useContext(AppContext);
@@ -12,9 +13,7 @@ function Contact() {
     setPageTitle('Contato - Colégio Criarte');
   }, []);
 
-  return (
-    <Container>{!submitForm ? <h1>Contato</h1> : <Navigate to="/obrigado" />}</Container>
-  );
+  return <Container>{!submitForm ? <Form /> : <Navigate to="/obrigado" />}</Container>;
 }
 
 export default Contact;

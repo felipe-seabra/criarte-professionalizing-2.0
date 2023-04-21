@@ -6,6 +6,7 @@ import { Container } from './styles';
 import { AppContext } from '../../context/provider';
 import Form from '../../components/Form';
 import Loading from '../../components/Loading';
+import ContactElements from '../../components/ContactElements';
 
 function Contact() {
   const { submitForm, errorSubmitForm, isLoading } = useContext(AppContext);
@@ -25,7 +26,12 @@ function Contact() {
     content = <Navigate to="/erro" />;
   }
 
-  return <Container>{content}</Container>;
+  return (
+    <Container>
+      {content}
+      <ContactElements />
+    </Container>
+  );
 }
 
 export default Contact;

@@ -65,4 +65,13 @@ export default createGlobalStyle`
     width: 100%;
     transition: 0.5s;
   }
+  .global-btn:disable {
+    cursor: not-allowed;
+  }
+
+  .required-field {
+    color: #E5625E;
+    font-size: 0.7em;
+    margin: 0;
+  }
 `;

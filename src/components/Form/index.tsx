@@ -5,7 +5,16 @@ import { Form as BootstrapForm, Button, FloatingLabel } from 'react-bootstrap';
 import { Container } from './styles';
 import { AppContext } from '../../context/provider';
 
-import verifyBtn from '../../utils/verifyBtn';
+import RequiredField from '../../helpers/RequiredField';
+
+import verifyBtn, {
+  verifyFieldCheckbox,
+  verifyFieldEmail,
+  verifyFieldMessage,
+  verifyFieldName,
+  verifyFieldOption,
+  verifyFieldPhone
+} from '../../utils/verifyBtn';
 import phoneMask from '../../utils/phoneMask';
 import { IFormValues } from '../../interfaces';
 
@@ -72,6 +81,7 @@ function Form() {
         <BootstrapForm className="container-fluid" onSubmit={handleFormSubmitIsLoading}>
           <>
             {/* input courses options */}
+            <RequiredField isValid={verifyFieldOption(formValues.option)} />
             <FloatingLabel
               controlId="floatingInput"
               label="Selecione um curso*"
@@ -89,6 +99,7 @@ function Form() {
               </BootstrapForm.Select>
             </FloatingLabel>
             {/* input all name */}
+            <RequiredField isValid={verifyFieldName(formValues.name)} />
             <FloatingLabel
               controlId="floatingInput"
               label="Nome completo*"
@@ -102,6 +113,7 @@ function Form() {
                 required
               />
             </FloatingLabel>
+            <RequiredField isValid={verifyFieldEmail(formValues.email)} />
             <FloatingLabel controlId="floatingInput" label="E-mail*" className="mb-3">
               <BootstrapForm.Control
                 type="email"
@@ -113,6 +125,7 @@ function Form() {
               />
             </FloatingLabel>
             {/* input phone */}
+            <RequiredField isValid={verifyFieldPhone(formValues.phone)} />
             <FloatingLabel controlId="floatingInput" label="Celular*" className="mb-3">
               <BootstrapForm.Control
                 type="tel"
@@ -126,6 +139,7 @@ function Form() {
               />
             </FloatingLabel>
             {/* input message */}
+            <RequiredField isValid={verifyFieldMessage(formValues.message)} />
             <FloatingLabel
               controlId="floatingTextarea2"
               label="Deixe sua mensagem aqui*"
@@ -144,6 +158,7 @@ function Form() {
             </FloatingLabel>
           </>
           {/* input checkbox */}
+          <RequiredField isValid={verifyFieldCheckbox(formValues.checkbox)} />
           <BootstrapForm.Check
             label="Aceito enviar meus dados."
             className="mb-3"

@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 import Content from './components/Content';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { AppContextProvider } from './context/provider';
 
 function App() {
   const [persisted, setPersisted] = usePresistedState(dark.title);
@@ -24,16 +25,18 @@ function App() {
 
   return (
     <BrowserRouter>
-      <ThemeProvider theme={theme}>
-        <div className="App">
-          <GlobalStyle />
-          <Header toggleTheme={toggleTheme} />
-          <main>
-            <Content />
-          </main>
-          <Footer />
-        </div>
-      </ThemeProvider>
+      <AppContextProvider>
+        <ThemeProvider theme={theme}>
+          <div className="App">
+            <GlobalStyle />
+            <Header toggleTheme={toggleTheme} />
+            <main>
+              <Content />
+            </main>
+            <Footer />
+          </div>
+        </ThemeProvider>
+      </AppContextProvider>
     </BrowserRouter>
   );
 }

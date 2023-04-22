@@ -4,6 +4,7 @@ import { imgEnfermagem, imgFarmacia, imgRadiologia } from '../images';
 
 const texts: ICourses[] = [
   {
+    id: 1,
     image: imgEnfermagem,
     title: 'Técnico em Enfermagem',
     description: `
@@ -34,6 +35,7 @@ const texts: ICourses[] = [
     duration: '26 meses'
   },
   {
+    id: 2,
     image: imgFarmacia,
     title: 'Técnico em Farmácia',
     description: `
@@ -58,6 +60,7 @@ const texts: ICourses[] = [
     duration: '19 meses'
   },
   {
+    id: 3,
     image: imgRadiologia,
     title: 'Técnico em Radiologia',
     description: `

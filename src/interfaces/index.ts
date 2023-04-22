@@ -8,6 +8,7 @@ export interface IFormValues {
 }
 
 export interface ICourses {
+  id: number;
   image: string;
   title: string;
   description: string;

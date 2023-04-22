@@ -1,37 +1,47 @@
-import { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
 
-export default createGlobalStyle`
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+export const Container = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8rem;
+  font-size: 1.3em;
 
-  body {
-    background: ${(props) => props.theme.colors.background};
-    font-size: 14px;
-    color: ${(props) => props.theme.colors.text};
-    font-family: 'Poppins', sans-serif;;
-  }
+  color: ${(props) => props.theme.colors.text};
 
-  main {
-    min-height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  span {
+  h1 {
     color: ${(props) => props.theme.colors.secundary};
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.04);
+    text-decoration: underline;
   }
 
-  .global-btn {
+  .img-course {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 3px 3px ${(props) => props.theme.colors.secundary}, 0 0.2em;
+  }
+
+  .list {
+    font-size: 1.2em;
+    text-align: start;
+  }
+
+  ul {
+    flex-direction: column;
+  }
+
+  li {
+    list-style: square;
+  }
+
+  .interested-btn {
     position: relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
+    width: 200px;
     height: 100%;
+    padding: 0.5rem 0.5rem;
     border: 2px solid ${(props) => props.theme.colors.secundary};
     border-radius: 8px;
     font-size: 1.2rem;
@@ -44,12 +54,12 @@ export default createGlobalStyle`
     transition: 0.5s;
   }
 
-  .global-btn:hover {
+  .interested-btn:hover {
     color: ${(props) => props.theme.colors.secundary};
     border: 2px solid ${(props) => props.theme.colors.secundary};
   }
 
-  .global-btn::before {
+  .interested-btn::before {
     content: '';
     position: absolute;
     top: 0;
@@ -61,18 +71,11 @@ export default createGlobalStyle`
     transition: 0.5s;
   }
 
-  .global-btn:hover::before {
+  .interested-btn:hover::before {
     width: 100%;
     transition: 0.5s;
   }
-  
-  .global-btn:disable {
+  .interested-btn:disable {
     cursor: not-allowed;
-  }
-
-  .required-field {
-    color: #E5625E;
-    font-size: 0.7em;
-    margin: 0;
   }
 `;

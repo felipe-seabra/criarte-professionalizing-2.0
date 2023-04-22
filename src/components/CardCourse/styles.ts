@@ -54,4 +54,9 @@ export const Container = styled.div`
     font-size: 22px;
     color: ${(props) => props.theme.colors.secundary};
   }
+
+  a {
+    text-decoration: none;
+    color: ${(props) => props.theme.colors.text};
+  }
 `;

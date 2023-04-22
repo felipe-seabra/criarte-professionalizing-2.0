@@ -12,10 +12,10 @@ const COOKIE_STYLE: React.CSSProperties = {
 function CookieConsentComponent(): JSX.Element {
   return (
     <CookieConsent style={COOKIE_STYLE} buttonText="Aceitar" expires={30}>
-      Este site utiliza cookies para seu adequado funcionamento, análises, personalização
-      e publicidade. Ao continuar navegando neste site você declara estar ciente destas
-      condições. Para saber mais, acesse nossa{' '}
-      <Link to="/politica">Política de Privacidade</Link>.
+      &#34;Este site utiliza cookies para seu adequado funcionamento, análises,
+      personalização e publicidade. Para saber mais, acesse nossa{' '}
+      <Link to="/politica">Política de Privacidade</Link>. Ao continuar navegando neste
+      site você declara estar ciente destas condições.&#34;
     </CookieConsent>
   );
 }

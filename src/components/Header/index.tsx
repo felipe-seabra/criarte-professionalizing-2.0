@@ -16,9 +16,10 @@ interface Props {
 
 const NAV_LINKS = [
   { path: '/', label: 'Início' },
-  { path: '/sobre', label: 'Sobre' },
+  // { path: '/sobre', label: 'Sobre' },
   { path: '/cursos', label: 'Cursos' },
-  { path: '/contato', label: 'Contato' }
+  { path: '/contato', label: 'Contato' },
+  { path: '/politica', label: 'LGPD •' }
 ];
 
 function Header({ toggleTheme }: Props) {

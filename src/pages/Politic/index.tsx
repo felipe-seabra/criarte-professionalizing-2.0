@@ -77,14 +77,14 @@ function Politic() {
               Privacidade:
             </p>
 
-            <ul className="has-text-color">
+            <ul>
               <li>
                 Dado pessoal: informação relacionada a pessoa natural identificada ou
                 identificável;
               </li>
             </ul>
 
-            <ul className="has-text-color">
+            <ul>
               <li>
                 Dado pessoal sensível: dado pessoal sobre origem racial ou étnica,
                 convicção religiosa, opinião política, filiação a sindicato ou a
@@ -94,32 +94,32 @@ function Politic() {
               </li>
             </ul>
 
-            <ul className="has-text-color">
+            <ul>
               <li>
                 Titular: pessoa natural a quem se referem os dados pessoais que são objeto
                 de tratamento;
               </li>
             </ul>
 
-            <ul className="has-text-color">
+            <ul>
               <li>Usuário: Titular de dados pessoais.</li>
             </ul>
 
-            <ul className="has-text-color">
+            <ul>
               <li>
                 Controlador: pessoa natural ou jurídica, de direito público ou privado, a
                 quem competem as decisões referentes ao tratamento de dados pessoais;
               </li>
             </ul>
 
-            <ul className="has-text-color">
+            <ul>
               <li>
                 Operador: pessoa natural ou jurídica, de direito público ou privado, que
                 realiza o tratamento de dados pessoais em nome do controlador;
               </li>
             </ul>
 
-            <ul className="has-text-color">
+            <ul>
               <li>
                 Encarregado: pessoa indicada pelo controlador e operador para atuar como
                 canal de comunicação entre o controlador, os titulares dos dados e a
@@ -127,7 +127,7 @@ function Politic() {
               </li>
             </ul>
 
-            <ul className="has-text-color">
+            <ul>
               <li>
                 Tratamento: toda operação realizada com dados pessoais, como as que se
                 referem a coleta, produção, recepção, classificação, utilização, acesso,
@@ -137,14 +137,14 @@ function Politic() {
               </li>
             </ul>
 
-            <ul className="has-text-color">
+            <ul>
               <li>
                 Bases/fundamentos jurídicos do tratamento: Hipóteses legais (art. 7º e 11,
                 LGPD) que autorizam e legitimam o tratamento de dados pessoais;
               </li>
             </ul>
 
-            <ul className="has-text-color">
+            <ul>
               <li>
                 Legítimo interesse do controlador: Fundamento para o tratamento de dados
                 do titular que incluem, mas não se limitam a apoio e promoção de
@@ -170,13 +170,18 @@ function Politic() {
 
             <p>
               Além do link “Contato”, disponível neste site (
-              <a href="http://www.colegiocriartepp.com.br/contato/)">
-                http://www.colegiocriartepp.com.br/contato/),
-              </a>{' '}
-              o CONTROLADOR pode ser contatada por correio, no endereço Rua Antônio
+              <a
+                href="https://www.criarteprofissionalizante.com.br/contato"
+                target="blank">
+                https://www.criarteprofissionalizante.com.br/contato
+              </a>
+              ), o CONTROLADOR pode ser contatada por correio, no endereço Rua Antônio
               Furtado de Miranda, nº 40, Vila Industrial, Presidente Prudente/SP, por
-              e-mail em <a href="about:blank">endereço@provedor.com.br </a>ou pelos
-              telefones (18) 3199-2510 e (18)
+              e-mail em{' '}
+              <a href="mailto:contato@criarteprofissionalizante.com.br">
+                contato@criarteprofissionalizante.com.br{' '}
+              </a>
+              ou pelos telefones (18) 3199-2510 e (18)
             </p>
 
             <p>
@@ -217,14 +222,14 @@ function Politic() {
               CRIARTE observa os seguintes princípios:
             </p>
 
-            <ul className="has-text-color">
+            <ul>
               <li>
                 Licitude, Lealdade e Transparência: Os dados pessoais dos USUÁRIOS, ora
                 titulares, são objeto de tratamento lícito, leal e transparente;
               </li>
             </ul>
 
-            <ul className="has-text-color">
+            <ul>
               <li>
                 Finalidade: Os dados são tratados para propósitos legítimos, específicos,
                 explícitos e informados ao titular, não se admitindo seu tratamento
@@ -232,7 +237,7 @@ function Politic() {
               </li>
             </ul>
 
-            <ul className="has-text-color">
+            <ul>
               <li>
                 Minimização, Adequação e Necessidade: Os dados são tratados de modo
                 adequado, pertinente, compatível e limitado ao mínimo necessário para as
@@ -240,7 +245,7 @@ function Politic() {
               </li>
             </ul>
 
-            <ul className="has-text-color">
+            <ul>
               <li>
                 Exatidão e Qualidade: Os dados dos USUÁRIOS serão tratados com exatidão,
                 clareza e relevância, bem como serão atualizados sempre que necessário,
@@ -249,7 +254,7 @@ function Politic() {
               </li>
             </ul>
 
-            <ul className="has-text-color">
+            <ul>
               <li>
                 Livre Acesso e Transparência: Aos USUÁRIOS se garante informações claras,
                 precisas e acessíveis sobre o tratamento e respectivos agentes, a
@@ -259,7 +264,7 @@ function Politic() {
               </li>
             </ul>
 
-            <ul className="has-text-color">
+            <ul>
               <li>
                 Limitação: Os dados pessoais são conservados de uma forma que permita a
                 identificação dos titulares apenas durante o período necessário para as
@@ -273,7 +278,7 @@ function Politic() {
               </li>
             </ul>
 
-            <ul className="has-text-color">
+            <ul>
               <li>
                 Prevenção: Os agentes de tratamento, responsáveis pelo site, adotam
                 medidas para prevenir a ocorrência de danos em virtude das operações de
@@ -281,14 +286,14 @@ function Politic() {
               </li>
             </ul>
 
-            <ul className="has-text-color">
+            <ul>
               <li>
                 Não Discriminação: Os dados não são tratados para fins discriminatórios
                 ilícitos ou abusivos;
               </li>
             </ul>
 
-            <ul className="has-text-color">
+            <ul>
               <li>
                 Responsabilização e Prestação de Contas: Cabem aos agentes de tratamento
                 demonstrarem aos titulares que adotam medidas eficazes e capazes de
@@ -297,14 +302,14 @@ function Politic() {
               </li>
             </ul>
 
-            <p className="has-text-color">
+            <p>
               O USUÁRIO, ora titular de dados pessoais tratados por força de navegação de
               deste site e uso de suas funcionalidades, tem assegurado, na forma da Lei
               Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018), o exercício dos
               seguintes direitos, considerados à luz dos princípios acima:
             </p>
 
-            <ul className="has-text-color">
+            <ul>
               <li>
                 Confirmação da existência de tratamento e acesso aos dados, que serão
                 providenciados por meio eletrônico ou impresso (a critério do usuário),
@@ -316,7 +321,7 @@ function Politic() {
               </li>
             </ul>
 
-            <ul className="has-text-color">
+            <ul>
               <li>
                 Cópia eletrônica integral dos dados pessoais, quando o tratamento tiver
                 origem no consentimento do titular, a ser providenciada em formato e forma
@@ -325,18 +330,18 @@ function Politic() {
               </li>
             </ul>
 
-            <ul className="has-text-color">
+            <ul>
               <li>Correção de dados incompletos, inexatos ou desatualizados;</li>
             </ul>
 
-            <ul className="has-text-color">
+            <ul>
               <li>
                 Anonimização, bloqueio ou eliminação de dados desnecessários, excessivos
                 ou tratados em desconformidade com o disposto na legislação vigente;
               </li>
             </ul>
 
-            <ul className="has-text-color">
+            <ul>
               <li>
                 Portabilidade dos dados a outro fornecedor – não incluídos os dados já
                 anonimizados – mediante requisição expressa a resguardados os segredos
@@ -344,7 +349,7 @@ function Politic() {
               </li>
             </ul>
 
-            <ul className="has-text-color">
+            <ul>
               <li>
                 Eliminação dos dados pessoais tratados com o consentimento do titular,
                 salvo quando sua conservação decorrer de: cumprimento de obrigação legal
@@ -356,21 +361,21 @@ function Politic() {
               </li>
             </ul>
 
-            <ul className="has-text-color">
+            <ul>
               <li>
                 Informação das entidades públicas e privadas com as quais o controlador
                 eventualmente compartilhou dados;
               </li>
             </ul>
 
-            <ul className="has-text-color">
+            <ul>
               <li>
                 Informação sobre a possibilidade de não fornecer consentimento e sobre as
                 consequências da negativa;
               </li>
             </ul>
 
-            <ul className="has-text-color">
+            <ul>
               <li>
                 Revogação do consentimento, a qualquer momento, mediante manifestação
                 expressa, ratificados os tratamentos já realizados sob amparo do
@@ -379,16 +384,19 @@ function Politic() {
               </li>
             </ul>
 
-            <ul className="has-text-color">
+            <ul>
               <li>
                 Peticionamento perante a Autoridade Nacional de Proteção de Dados Pessoais
                 (ANPD) em relação a seus dados, notadamente via canais de atendimento
-                disponíveis em “https://
-                <a href="http://www.gov.br/anpd/pt-br">www.gov.br/anpd/pt-br”</a>;
+                disponíveis em{' '}
+                <a href="http://www.gov.br/anpd/pt-br" target="blank">
+                  https://www.gov.br/anpd/pt-br
+                </a>
+                ;
               </li>
             </ul>
 
-            <ul className="has-text-color">
+            <ul>
               <li>
                 Revisão de decisões tomadas unicamente com base em tratamento automatizado
                 de dados pessoais que afetem seus interesses, incluídas as decisões
@@ -413,7 +421,7 @@ function Politic() {
             <p>
               O requerimento poderá ser enviado ao e-mail{' '}
               <a href="mailto:encarregadolgpd@criarteonline.com.br">
-                encarregadolgpd@criarteonline.com.br,{' '}
+                encarregadolgpd@criarteonline.com.br{' '}
               </a>
               ou via postal para o seguinte endereço: CENTRO EDUCACIONAL CRIARTE
               LTDA/COLÉGIO CRIARTE ou ESCOLA TÉCNICA ORBOLATO RODRIGUES LTDA/COLÉGIO
@@ -466,14 +474,17 @@ function Politic() {
               operações realizadas e a finalidade visada:
             </p>
 
-            <ul className="has-text-color">
+            <ul>
               <li>
                 <strong>Funcionalidade</strong>
                 <strong>:</strong>
                 <strong> </strong>Contato – Fale Conosco (
-                <a href="http://www.colegiocriartepp.com.br/contato/)">
-                  http://www.colegiocriartepp.com.br/contato/).
+                <a
+                  href="https://www.criarteprofissionalizante.com.br/contato"
+                  target="blank">
+                  https://www.criarteprofissionalizante.com.br/contato
                 </a>
+                ).
               </li>
             </ul>
 
@@ -501,15 +512,17 @@ function Politic() {
               (sendo o caso) e atendimento aos interesses legítimos do controlador.
             </p>
 
-            <ul className="has-text-color">
+            <ul>
               <li>
                 <strong>Funcionalidade</strong>
                 <strong>:</strong>
-                <strong> </strong>Contato – Trabalhe Conosco{' '}
-                <a href="http://www.colegiocriartepp.com.br/contato/)">(ht</a>t
-                <a href="http://www.colegiocriartepp.com.br/contato/)">
-                  p://www.colegiocriartepp.com.br/contato/).
+                <strong> </strong>Contato – Trabalhe Conosco (
+                <a
+                  href="https://www.criarteprofissionalizante.com.br/contato"
+                  target="blank">
+                  https://www.criarteprofissionalizante.com.br/contato
                 </a>
+                ).
               </li>
             </ul>
 
@@ -537,15 +550,15 @@ function Politic() {
               do controlador.
             </p>
 
-            <ul className="has-text-color">
+            <ul>
               <li>
                 <strong>Funcionalidade</strong>
                 <strong>:</strong>
-                <strong> </strong>Acesso restrito – Portal do Aluno{' '}
-                <a href="http://criarte.saenet.net.br/Sae8Portal)">(ht</a>t
-                <a href="http://criarte.saenet.net.br/Sae8Portal)">
-                  p://criarte.saenet.net.br/Sae8Portal).
+                <strong> </strong>Acesso restrito – Portal do Aluno (
+                <a href="http://criarte.saenet.net.br/Sae8Portal" target="blank">
+                  http://criarte.saenet.net.br/Sae8Portal
                 </a>
+                ).
               </li>
             </ul>
 
@@ -580,18 +593,21 @@ function Politic() {
               controlador.
             </p>
 
-            <ul className="has-text-color">
+            <ul>
               <li>
                 <strong>Funcionalidade</strong>
-                <strong>: </strong>Formulário (https://
-                <a href="http://www.colegiocriartepp.com.br/formulario/)">
-                  www.colegiocriartepp.com.br/formulario/).
-                </a>{' '}
-                <strong>Operações de tratamento envolvidas</strong>: Coleta de dados via
-                formulário, seu compartilhamento e armazenamento nos sistemas de gestão do
-                controlador (“SaeNet”) e eventual eliminação.
+                <strong>: </strong>Formulário (
+                <a href="http://www.colegiocriartepp.com.br/formulario/" target="blank">
+                  http://www.colegiocriartepp.com.br/formulario/
+                </a>
+                ).
               </li>
             </ul>
+            <p>
+              <strong>Operações de tratamento envolvidas</strong>: Coleta de dados via
+              formulário, seu compartilhamento e armazenamento nos sistemas de gestão do
+              controlador (“SaeNet”) e eventual eliminação.
+            </p>
 
             <p>
               <strong>Dados pessoais tratados: </strong>Curso selecionado, nome completo,
@@ -610,19 +626,22 @@ function Politic() {
               contrato e atendimento aos interesses legítimos do controlador.
             </p>
 
-            <ul className="has-text-color">
+            <ul>
               <li>
                 <strong>Funcionalidade</strong>
-                <strong>: </strong>Ficha de retorno (https://
-                <a href="http://www.colegiocriartepp.com.br/retorno/)">
-                  www.colegiocriartepp.com.br/retorno/)
-                </a>{' '}
-                <strong>Operações de tratamento envolvidas</strong>: Coleta de dados via
-                formulário, seu compartilhamento e armazenamento nos sistemas de gestão do
-                controlador (“SaeNet”) e eventual eliminação.
+                <strong>: </strong>Ficha de retorno (
+                <a href="http://www.colegiocriartepp.com.br/retorno/" target="blank">
+                  http://www.colegiocriartepp.com.br/retorno/
+                </a>
+                ).
               </li>
             </ul>
 
+            <p>
+              <strong>Operações de tratamento envolvidas</strong>: Coleta de dados via
+              formulário, seu compartilhamento e armazenamento nos sistemas de gestão do
+              controlador (“SaeNet”) e eventual eliminação.
+            </p>
             <p>
               <strong>Dados pessoais tratados: </strong>Nome do responsável pelo(a)
               aluno(a) matriculado no controlador (ensino regular), parentesco, nome do(a)
@@ -647,13 +666,14 @@ function Politic() {
               terceiro e atendimento aos interesses legítimos do controlador.
             </p>
 
-            <ul className="has-text-color">
+            <ul>
               <li>
                 <strong>Funcionalidade:</strong>
-                <strong> </strong>Ficha Retorno – 2º Semestre (https://
-                <a href="http://www.colegiocriartepp.com.br/ficha/">
-                  www.colegiocriartepp.com.br/ficha/
+                <strong> </strong>Ficha Retorno – 2º Semestre (
+                <a href="http://www.colegiocriartepp.com.br/ficha/" target="blank">
+                  http://www.colegiocriartepp.com.br/ficha/
                 </a>
+                ).
               </li>
             </ul>
 
@@ -764,8 +784,13 @@ function Politic() {
               cookies para avaliar as interações do USUÁRIO no site, como a localidade de
               acesso, páginas mais acessadas, tempo de navegação e outras informações
               sobre sua atividade. Mais informações sobre estes cookies, descrição e forma
-              de funcionamento podem ser encontradas em:
-              https://developers.google.com/analytics/devguides/collection/gajs/cookie-usage?hl=pt-br.
+              de funcionamento podem ser encontradas em:{' '}
+              <a
+                href="https://developers.google.com/analytics/devguides/collection/gajs/cookie-usage?hl=pt-br"
+                target="blank">
+                https://developers.google.com/analytics/devguides/collection/gajs/cookie-usage?hl=pt-br
+              </a>
+              .
             </p>
 
             <p>
@@ -777,42 +802,58 @@ function Politic() {
               indicando-se desde já links úteis nesse sentido:
             </p>
 
-            <ul className="has-text-color">
+            <ul>
               <li>
-                Navegador “Google Chrome”:
-                https://support.google.com/chrome/answer/95647?hl=pt-BR
-              </li>
-            </ul>
-
-            <ul className="has-text-color">
-              <li>
-                Navegador “Mozilla Firefox”:
-                https://support.mozilla.org/pt-BR/kb/impeca-que-
-                sites-armazenem-cookies-e-dados-no-fire
-              </li>
-            </ul>
-
-            <ul className="has-text-color">
-              <li>
-                Navegador “Internet Explorer” e “Microsoft Edge”:
-                https://support.microsoft.com/pt-br/windows/excluir-e-gerenciar-cookies-
-                168dab11-0753-043d-7c16-ede5947fc64d
-              </li>
-            </ul>
-
-            <ul className="has-text-color">
-              <li>
-                Navegador “Opera”: https://
-                <a href="http://www.opera.com/help/tutorials/security/privacy/">
-                  www.opera.com/help/tutorials/security/privacy/
+                Navegador “Google Chrome”:{' '}
+                <a
+                  href="https://support.google.com/chrome/answer/95647?hl=pt-BR"
+                  target="blank">
+                  https://support.google.com/chrome/answer/95647?hl=pt-BR
                 </a>
               </li>
             </ul>
 
-            <ul className="has-text-color">
+            <ul>
               <li>
-                Navegador “Safari”:
-                https://support.apple.com/pt-br/guide/safari/sfri11471/mac
+                Navegador “Mozilla Firefox”:{' '}
+                <a
+                  href="https://support.mozilla.org/pt-BR/kb/impeca-que-sites-armazenem-cookies-e-dados-no-fire"
+                  target="blank">
+                  https://support.mozilla.org/pt-BR/kb/impeca-que-sites-armazenem-cookies-e-dados-no-fire
+                </a>
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                Navegador “Internet Explorer” e “Microsoft Edge”:{' '}
+                <a
+                  href="https://support.microsoft.com/pt-br/windows/excluir-e-gerenciar-cookies-168dab11-0753-043d-7c16-ede5947fc64d"
+                  target="blank">
+                  https://support.microsoft.com/pt-br/windows/excluir-e-gerenciar-cookies-168dab11-0753-043d-7c16-ede5947fc64d
+                </a>
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                Navegador “Opera”:{' '}
+                <a
+                  href="http://www.opera.com/help/tutorials/security/privacy/"
+                  target="blank">
+                  http://www.opera.com/help/tutorials/security/privacy/
+                </a>
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                Navegador “Safari”:{' '}
+                <a
+                  href="https://support.apple.com/pt-br/guide/safari/sfri11471/mac"
+                  target="blank">
+                  https://support.apple.com/pt-br/guide/safari/sfri11471/mac
+                </a>
               </li>
             </ul>
 

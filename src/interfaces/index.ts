@@ -6,3 +6,14 @@ export interface IFormValues {
   message: string;
   checkbox: boolean;
 }
+
+export interface ICourses {
+  image: string;
+  title: string;
+  description: string;
+  descriptionMore?: string;
+  occuparionArea: string[];
+  requirements: string;
+  requirementsMore?: string;
+  duration: string;
+}

@@ -29,7 +29,7 @@ function Contact() {
   return (
     <Container>
       {content}
-      <ContactElements />
+      {!isLoading ? <ContactElements /> : null}
     </Container>
   );
 }

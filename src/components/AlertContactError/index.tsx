@@ -3,6 +3,7 @@ import { Navigate, Link } from 'react-router-dom';
 import Alert from 'react-bootstrap/Alert';
 import { Container } from './styles';
 import { AppContext } from '../../context/provider';
+import ContactElements from '../ContactElements';
 
 function AlertContactError() {
   const { submitForm } = useContext(AppContext);
@@ -25,6 +26,9 @@ function AlertContactError() {
           <Link to="/" className="global-btn">
             Voltar
           </Link>
+        </div>
+        <div className="mt-5">
+          <ContactElements />
         </div>
       </div>
     </Container>

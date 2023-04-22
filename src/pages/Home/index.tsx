@@ -17,9 +17,10 @@ function Home() {
           <h1>Colégio Criarte</h1>
           <h3>Cursos Profissionalizantes</h3>
           <p>
-            Cursos profissionalizantes. Desde 1991, o Colégio Criarte oferece ensino de
-            excelência para ingressar no mercado de trabalho. Oferece cursos de Farmácia,
-            Radiologia e Enfermagem.
+            Há mais de 30 anos, o Colégio Criarte tem sido referência em educação,
+            oferecendo cursos de Farmácia, Radiologia e Enfermagem de excelência. Com foco
+            na preparação para o mercado de trabalho, os estudantes recebem conhecimentos
+            práticos e teóricos de alta qualidade.
           </p>
           <div className="home-btn">
             <Link to="/sobre">Saber Mais</Link>

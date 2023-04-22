@@ -173,7 +173,7 @@ function Politic() {
               <a
                 href="https://www.criarteprofissionalizante.com.br/contato"
                 target="blank">
-                https://www.criarteprofissionalizante.com.br/contato
+                link
               </a>
               ), o CONTROLADOR pode ser contatada por correio, no endereço Rua Antônio
               Furtado de Miranda, nº 40, Vila Industrial, Presidente Prudente/SP, por
@@ -197,9 +197,8 @@ function Politic() {
 
             <p>
               O encarregado de proteção de dados (“Data Protection Officer” – DPO)
-              indicado pelo controlador é o Sr.{' '}
-              <strong>FELIPE JOSÉ SEABRA BRANDOLIN</strong>, que poderá ser contatado pelo
-              USUÁRIO via e-mail{' '}
+              indicado pelo controlador é o Sr. <strong>NÃO ESPECIFICADO</strong>, que
+              poderá ser contatado pelo USUÁRIO via e-mail{' '}
               <a href="mailto:encarregadolgpd@criarteonline.com.br">
                 <strong>encarregadolgpd@criarteonline.com.br</strong>.
               </a>
@@ -390,7 +389,7 @@ function Politic() {
                 (ANPD) em relação a seus dados, notadamente via canais de atendimento
                 disponíveis em{' '}
                 <a href="http://www.gov.br/anpd/pt-br" target="blank">
-                  https://www.gov.br/anpd/pt-br
+                  link
                 </a>
                 ;
               </li>
@@ -482,7 +481,7 @@ function Politic() {
                 <a
                   href="https://www.criarteprofissionalizante.com.br/contato"
                   target="blank">
-                  https://www.criarteprofissionalizante.com.br/contato
+                  link
                 </a>
                 ).
               </li>
@@ -520,7 +519,7 @@ function Politic() {
                 <a
                   href="https://www.criarteprofissionalizante.com.br/contato"
                   target="blank">
-                  https://www.criarteprofissionalizante.com.br/contato
+                  link
                 </a>
                 ).
               </li>
@@ -556,7 +555,7 @@ function Politic() {
                 <strong>:</strong>
                 <strong> </strong>Acesso restrito – Portal do Aluno (
                 <a href="http://criarte.saenet.net.br/Sae8Portal" target="blank">
-                  http://criarte.saenet.net.br/Sae8Portal
+                  link
                 </a>
                 ).
               </li>
@@ -598,7 +597,7 @@ function Politic() {
                 <strong>Funcionalidade</strong>
                 <strong>: </strong>Formulário (
                 <a href="http://www.colegiocriartepp.com.br/formulario/" target="blank">
-                  http://www.colegiocriartepp.com.br/formulario/
+                  link
                 </a>
                 ).
               </li>
@@ -631,7 +630,7 @@ function Politic() {
                 <strong>Funcionalidade</strong>
                 <strong>: </strong>Ficha de retorno (
                 <a href="http://www.colegiocriartepp.com.br/retorno/" target="blank">
-                  http://www.colegiocriartepp.com.br/retorno/
+                  link
                 </a>
                 ).
               </li>
@@ -671,7 +670,7 @@ function Politic() {
                 <strong>Funcionalidade:</strong>
                 <strong> </strong>Ficha Retorno – 2º Semestre (
                 <a href="http://www.colegiocriartepp.com.br/ficha/" target="blank">
-                  http://www.colegiocriartepp.com.br/ficha/
+                  link
                 </a>
                 ).
               </li>
@@ -788,7 +787,7 @@ function Politic() {
               <a
                 href="https://developers.google.com/analytics/devguides/collection/gajs/cookie-usage?hl=pt-br"
                 target="blank">
-                https://developers.google.com/analytics/devguides/collection/gajs/cookie-usage?hl=pt-br
+                link
               </a>
               .
             </p>
@@ -808,7 +807,7 @@ function Politic() {
                 <a
                   href="https://support.google.com/chrome/answer/95647?hl=pt-BR"
                   target="blank">
-                  https://support.google.com/chrome/answer/95647?hl=pt-BR
+                  link
                 </a>
               </li>
             </ul>
@@ -819,7 +818,7 @@ function Politic() {
                 <a
                   href="https://support.mozilla.org/pt-BR/kb/impeca-que-sites-armazenem-cookies-e-dados-no-fire"
                   target="blank">
-                  https://support.mozilla.org/pt-BR/kb/impeca-que-sites-armazenem-cookies-e-dados-no-fire
+                  link
                 </a>
               </li>
             </ul>
@@ -830,7 +829,7 @@ function Politic() {
                 <a
                   href="https://support.microsoft.com/pt-br/windows/excluir-e-gerenciar-cookies-168dab11-0753-043d-7c16-ede5947fc64d"
                   target="blank">
-                  https://support.microsoft.com/pt-br/windows/excluir-e-gerenciar-cookies-168dab11-0753-043d-7c16-ede5947fc64d
+                  link
                 </a>
               </li>
             </ul>
@@ -841,7 +840,7 @@ function Politic() {
                 <a
                   href="http://www.opera.com/help/tutorials/security/privacy/"
                   target="blank">
-                  http://www.opera.com/help/tutorials/security/privacy/
+                  link
                 </a>
               </li>
             </ul>
@@ -852,7 +851,7 @@ function Politic() {
                 <a
                   href="https://support.apple.com/pt-br/guide/safari/sfri11471/mac"
                   target="blank">
-                  https://support.apple.com/pt-br/guide/safari/sfri11471/mac
+                  link
                 </a>
               </li>
             </ul>

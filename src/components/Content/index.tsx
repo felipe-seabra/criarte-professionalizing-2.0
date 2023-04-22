@@ -8,6 +8,7 @@ import Thanks from '../../pages/Thanks';
 import Sorry from '../../pages/Sorry';
 import CourseDetail from '../../pages/CourseDetail';
 import Error from '../../pages/Error';
+import Politic from '../../pages/Politic';
 
 function Content() {
   return (
@@ -19,6 +20,7 @@ function Content() {
       <Route path="/contato" element={<Contact />} />
       <Route path="/obrigado" element={<Thanks />} />
       <Route path="/erro" element={<Sorry />} />
+      <Route path="/politica" element={<Politic />} />
       <Route path="*" element={<Error />} />
     </Routes>
   );

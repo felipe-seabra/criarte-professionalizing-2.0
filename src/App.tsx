@@ -13,6 +13,7 @@ import Content from './components/Content';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { AppContextProvider } from './context/provider';
+import CookieConsentComponent from './components/CookieConsentComponent';
 
 function App() {
   const [persisted, setPersisted] = usePresistedState(dark.title);
@@ -30,6 +31,7 @@ function App() {
           <div className="App">
             <GlobalStyle />
             <Header toggleTheme={toggleTheme} />
+            <CookieConsentComponent />
             <main>
               <Content />
             </main>

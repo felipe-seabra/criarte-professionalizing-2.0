@@ -31,11 +31,11 @@ function App() {
           <div className="App">
             <GlobalStyle />
             <Header toggleTheme={toggleTheme} />
-            <CookieConsentComponent />
             <main>
               <Content />
             </main>
             <Footer />
+            <CookieConsentComponent />
           </div>
         </ThemeProvider>
       </AppContextProvider>

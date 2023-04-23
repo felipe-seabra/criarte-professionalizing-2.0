@@ -23,7 +23,7 @@ function Home() {
             práticos e teóricos de alta qualidade.
           </p>
           <div className="home-btn">
-            <Link to="/sobre">Saber Mais</Link>
+            <Link to="/cursos">Saber Mais</Link>
             <Link to="/contato">Contato</Link>
           </div>
         </div>

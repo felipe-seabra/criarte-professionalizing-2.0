@@ -19,7 +19,7 @@ function Footer() {
   return (
     <footer>
       <Container style={ContainerStyle}>
-        <div>Colégio Criarte - &copy; 2023</div>
+        <div>Colégio Criarte - &copy; 2022</div>
       </Container>
     </footer>
   );

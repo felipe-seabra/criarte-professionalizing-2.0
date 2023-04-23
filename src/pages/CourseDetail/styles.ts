@@ -11,7 +11,7 @@ export const Container = styled.div`
 
   h1 {
     color: ${(props) => props.theme.colors.secundary};
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.04);
+    text-shadow: 1px 1px 1px ${(props) => props.theme.colors.text};
     text-decoration: underline;
   }
 

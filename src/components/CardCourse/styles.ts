@@ -7,12 +7,12 @@ export const Container = styled.div`
   margin: 1rem 0;
   background: ${(props) => props.theme.colors.primary};
   cursor: pointer;
-  transition: 0.5s;
   padding: 1rem;
   max-width: 400px;
   min-height: 600px;
   display: flex;
   text-align: center;
+  transition: 0.5s;
 
   :hover {
     transform: scale(1.05);
@@ -53,6 +53,11 @@ export const Container = styled.div`
   h3 {
     font-size: 22px;
     color: ${(props) => props.theme.colors.secundary};
+    transition: 0.5s;
+  }
+
+  h3:hover {
+    transform: scale(1.05);
   }
 
   a {

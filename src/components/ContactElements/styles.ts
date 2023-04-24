@@ -7,6 +7,7 @@ export const Container = styled.div`
   justify-content: space-around;
   align-items: center;
   min-height: 100px;
+  width: 100%;
   margin-bottom: 30px;
   // background-color: ${(props) => props.theme.colors.secundary};
 

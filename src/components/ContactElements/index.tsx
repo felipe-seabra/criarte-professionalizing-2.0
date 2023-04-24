@@ -11,19 +11,17 @@ const linkPhone = 'tel:+55(18)3222-2682';
 
 function ContactElements() {
   return (
-    <footer>
-      <Container>
-        <a href={linkWhatsapp} target="blank">
-          <i className="bx bxl-whatsapp" />
-        </a>
-        <a href={linkEmail}>
-          <i className="bx bx-envelope" />
-        </a>
-        <a href={linkPhone}>
-          <i className="bx bx-phone" />
-        </a>
-      </Container>
-    </footer>
+    <Container>
+      <a href={linkWhatsapp} target="blank">
+        <i className="bx bxl-whatsapp" />
+      </a>
+      <a href={linkEmail}>
+        <i className="bx bx-envelope" />
+      </a>
+      <a href={linkPhone}>
+        <i className="bx bx-phone" />
+      </a>
+    </Container>
   );
 }
 

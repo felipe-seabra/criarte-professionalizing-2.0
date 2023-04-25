@@ -10,6 +10,12 @@
     "type": "git",
     "url": "https://github.com/felipe-seabra/criarte-new-website"
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true"
+    }
+  },
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",

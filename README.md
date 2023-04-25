@@ -49,4 +49,8 @@ O site também utiliza o pacote Nookies para armazenar o tema selecionado pelo u
 
 O Bootstrap é utilizado para a estilização geral do site, e o Polished é utilizado para a manipulação de cores.
 
+## Demonstração
+
+![Imagem demo](/images/demo.png)
+
 © Desenvolvido por [Felipe Seabra](https://www.linkedin.com/in/felipe-seabra/) 

@@ -13,7 +13,11 @@ function Footer() {
   const location = useLocation();
 
   React.useEffect(() => {
-    setPosition(location.pathname === '/' ? 'absolute' : 'relative');
+    setPosition(
+      location.pathname === '/' || location.pathname === '/cursos'
+        ? 'absolute'
+        : 'relative'
+    );
   }, [location.pathname]);
 
   return (

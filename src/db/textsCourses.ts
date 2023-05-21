@@ -8,10 +8,10 @@ const texts: ICourses[] = [
     image: imgEnfermagem,
     title: 'Técnico em Enfermagem',
     description: `
-    O Curso Técnico em Enfermagem tem como objetivo formar profissionais para o
-    exercício de funções relacionadas a Enfermagem, capacitando-os para o
-    planejamento de atividades e prestação dos cuidados
-    necessários ao indivíduo saudável ou doente.`,
+    No curso de Técnico em Enfermagem do Colégio Criarte você se tornará um 
+    profissional para o exercício de funções relacionadas à enfermagem, capacitando-os 
+    para o planejamento de atividades e prestação dos cuidados necessários ao 
+    indivíduo saudável e doente.`,
     descriptionMore: `
     Está entre suas principais atribuições promover ações de orientação e
     preparo do paciente para exames,
@@ -32,17 +32,16 @@ const texts: ICourses[] = [
     anos e ter concluído ou estar
     cursando a partir do segundo ano do Ensino Médio.`,
     requirementsMore: '',
-    duration: '26 meses'
+    duration: '25 meses'
   },
   {
     id: 2,
     image: imgFarmacia,
     title: 'Técnico em Farmácia',
     description: `
-    O Curso Técnico em Farmácia tem como objetivo formar pessoal qualificado
-    para atuar na área de vendas, dispensação de materiais, auxiliar na
-    manipulação de medicamentos, além de atuar na distribuição de medicamentos
-    da farmácia hospitalar.`,
+    No curso Técnico em Farmácia do Colégio Criarte você será formado para atuar 
+    na área de vendas, dispensação de materiais, auxiliar na manipulação de 
+    medicamentos, além de atuar na distribuição de medicamentos da farmácia hospitalar.`,
     descriptionMore: '',
     occuparionArea: [
       'drogarias comerciais;',
@@ -64,9 +63,10 @@ const texts: ICourses[] = [
     image: imgRadiologia,
     title: 'Técnico em Radiologia',
     description: `
-    O Curso Técnico em Radiologia prepara o profissional para atuar nas diversas
-    áreas de aplicação da radiação ionizante e fornecer subsídios de imagem para
-    o diagnóstico de diversas patologias.`,
+    No curso Técnico em Radiologia do Colégio Criarte você será preparado 
+    para atuar de forma segura nas diversas áreas de aplicação da radiação 
+    ionizante e fornecer subsídios de imagem para diagnóstico de 
+    diversas patologias.`,
     descriptionMore: `O profissional realiza exames radiográficos convencionais. Processa
     filmes radiológicos. Prepara o paciente e o ambiente para a realização de
     exames nos serviços de radiologia e diagnóstico por imagem, tais como:

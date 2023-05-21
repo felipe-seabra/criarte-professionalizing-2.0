@@ -6,12 +6,13 @@ export const Container = styled.div`
   justify-content: center;
   margin-top: 8rem;
   font-size: 1.3em;
+  max-width: 1000px;
 
   color: ${(props) => props.theme.colors.text};
 
   h1 {
     color: ${(props) => props.theme.colors.secundary};
-    text-shadow: 1px 1px 1px ${(props) => props.theme.colors.text};
+    text-shadow: 0.5px 0.5px 0px ${(props) => props.theme.colors.text};
     text-decoration: underline;
   }
 
@@ -21,8 +22,16 @@ export const Container = styled.div`
     box-shadow: 3px 3px ${(props) => props.theme.colors.secundary}, 0 0.2em;
   }
 
+  p {
+    text-align: justify;
+  }
+
+  h3 {
+    text-decoration: underline;
+  }
+
   .list {
-    font-size: 1.2em;
+    font-size: 1.1em;
     text-align: start;
   }
 

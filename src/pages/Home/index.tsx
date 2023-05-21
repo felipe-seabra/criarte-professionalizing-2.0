@@ -15,7 +15,7 @@ function Home() {
       <section className="home">
         <div className="home-content">
           <h1>Colégio Criarte</h1>
-          <h3>Cursos Profissionalizantes</h3>
+          <h3>Cursos Técnicos</h3>
           <p>
             Há mais de 30 anos, o Colégio Criarte tem sido referência em educação,
             oferecendo cursos de Farmácia, Radiologia e Enfermagem de excelência. Com foco

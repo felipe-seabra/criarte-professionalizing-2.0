@@ -1,11 +1,13 @@
 import React, { useEffect } from 'react';
 import setPageTitle from '../../utils/setPageTitle';
+import windowScrollToTop from '../../utils/windowScrollToTop';
 
 import { Container } from './styles';
 
 function Politic() {
   useEffect(() => {
     setPageTitle('Política de Privacidade - Colégio Criarte');
+    windowScrollToTop();
   }, []);
 
   return (

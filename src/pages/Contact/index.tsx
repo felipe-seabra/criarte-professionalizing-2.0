@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import { Navigate } from 'react-router-dom';
 import setPageTitle from '../../utils/setPageTitle';
+import windowScrollToTop from '../../utils/windowScrollToTop';
 
 import { Container } from './styles';
 import { AppContext } from '../../context/provider';
@@ -13,6 +14,7 @@ function Contact() {
 
   useEffect(() => {
     setPageTitle('Contato - Colégio Criarte');
+    windowScrollToTop();
   }, []);
 
   let content;

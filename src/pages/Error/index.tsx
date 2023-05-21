@@ -2,12 +2,14 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import setPageTitle from '../../utils/setPageTitle';
+import windowScrollToTop from '../../utils/windowScrollToTop';
 
 import { Container } from './styles';
 
 function Error() {
   useEffect(() => {
     setPageTitle('Error 404 - Colégio Criarte');
+    windowScrollToTop();
   }, []);
 
   return (

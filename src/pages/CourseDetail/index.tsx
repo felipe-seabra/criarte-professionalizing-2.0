@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import setPageTitle from '../../utils/setPageTitle';
+import windowScrollToTop from '../../utils/windowScrollToTop';
 
 import texts from '../../db/textsCourses';
 
@@ -17,6 +18,7 @@ function CourseDetail() {
     setCourse(courseFound);
 
     setPageTitle(courseFound?.title || 'Curso não encontrado');
+    windowScrollToTop();
   }, []);
 
   const {

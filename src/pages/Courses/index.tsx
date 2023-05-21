@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React, { useEffect } from 'react';
 import setPageTitle from '../../utils/setPageTitle';
+import windowScrollToTop from '../../utils/windowScrollToTop';
 
 import texts from '../../db/textsCourses';
 
@@ -10,6 +11,7 @@ import CardCourse from '../../components/CardCourse';
 function Courses() {
   useEffect(() => {
     setPageTitle('Cursos - Colégio Criarte');
+    windowScrollToTop();
   }, []);
 
   return (

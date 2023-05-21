@@ -16,6 +16,9 @@ const LOCATION = `https://www.google.com.br/maps/place/Col%C3%A9gio+Criarte/@-22
 
 const LINK_SAENET = `http://criarte.saenet.net.br/Sae8Portal/login.aspx?ReturnUrl=%2fSae8Portal%2fprincipal.aspx`;
 
+const LINK_WHATSAPP =
+  'https://api.whatsapp.com/send?phone=5518981029767&text=Ol%C3%A1,%20tenho%20interesse%20no%20curso%20profissionalizante%20do%20Criarte.';
+
 function Footer() {
   const [position, setPosition] = useState<Position>(
     window.location.pathname === '/' ? 'absolute' : 'relative'
@@ -46,6 +49,11 @@ function Footer() {
               <Link to="tel:+551832222682">
                 <FooterLink>
                   <i className="bx bxs-phone" /> (18) 3222-2682
+                </FooterLink>
+              </Link>
+              <Link to={LINK_WHATSAPP} target="_blank">
+                <FooterLink>
+                  <i className="bx bxl-whatsapp" /> WhatsApp
                 </FooterLink>
               </Link>
               <Link to="mailto:contato@criarteprofissionalizante.com.br">

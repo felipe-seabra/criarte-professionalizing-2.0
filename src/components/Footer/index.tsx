@@ -42,6 +42,19 @@ function Footer() {
         <>
           <FooterContainer>
             <FooterColumn>
+              <h4>Contato:</h4>
+              <Link to="tel:+551832222682">
+                <FooterLink>
+                  <i className="bx bxs-phone" /> (18) 3222-2682
+                </FooterLink>
+              </Link>
+              <Link to="mailto:contato@criarteprofissionalizante.com.br">
+                <FooterLink>
+                  <i className="bx bxs-envelope" /> Email
+                </FooterLink>
+              </Link>
+            </FooterColumn>
+            <FooterColumn>
               <h4>Localização:</h4>
               <FooterText>
                 <MapIcon>
@@ -58,7 +71,7 @@ function Footer() {
               </FooterLink>
             </FooterColumn>
             <FooterColumn>
-              <h4>Cursos Técnicos</h4>
+              <h4>Cursos Técnicos:</h4>
               <Link to="/cursos/1">
                 <FooterLink>Técnico em Enfermagem</FooterLink>
               </Link>
@@ -70,7 +83,7 @@ function Footer() {
               </Link>
             </FooterColumn>
             <FooterColumn>
-              <h4>Institucional</h4>
+              <h4>Institucional:</h4>
               <Link to="/">
                 <FooterLink>Quem Somos</FooterLink>
               </Link>

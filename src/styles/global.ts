@@ -75,4 +75,31 @@ export default createGlobalStyle`
     font-size: 0.7em;
     margin: 0;
   }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  /* Estilizando o rastro da barra de rolagem */
+  ::-webkit-scrollbar-track {
+    background: ${(props) => props.theme.colors.background};
+  }
+
+  /* Estilizando o "polegar" da barra de rolagem */
+  ::-webkit-scrollbar-thumb {
+    background: ${(props) => props.theme.colors.secundary};
+    border-radius: 10px;
+  }
+
+  /* Estilizando os botões de seta da barra de rolagem */
+  ::-webkit-scrollbar-button {
+    background: rgba(204, 204, 204, 0.5); 
+  }
+
+  /* Estilizando o canto inferior direito da barra de rolagem */
+  ::-webkit-scrollbar-corner {
+    background: rgba(241, 241, 241, 0.5);
+  }
+
 `;

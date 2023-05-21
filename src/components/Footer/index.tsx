@@ -2,6 +2,7 @@ import React, { CSSProperties, useState } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import {
   Container,
+  Copy,
   FooterColumn,
   FooterContainer,
   FooterLink,
@@ -35,63 +36,57 @@ function Footer() {
     <footer>
       {location.pathname === '/' ? (
         <Container style={ContainerStyle}>
-          <div>Colégio Criarte - &copy; 2022</div>
+          <Copy>Colégio Criarte - &copy; 2022</Copy>
         </Container>
       ) : (
-        <FooterContainer>
-          <FooterColumn>
-            <h4>Entre em contato</h4>
-            <div>
-              <FooterLink href="mailto:contato@criarteprofissionalizante.com.br">
-                contato@criarteprofissionalizante.com.br
+        <>
+          <FooterContainer>
+            <FooterColumn>
+              <h4>Localização:</h4>
+              <FooterText>
+                <MapIcon>
+                  <i className="bx bxs-map" />
+                </MapIcon>
+                Rua Antônio Furtado de Miranda, 40 - Vila Industrial
+              </FooterText>
+              <FooterText>Presidente Prudente - SP</FooterText>
+              <FooterLink href={LOCATION} target="_blank">
+                <MapIcon>
+                  <i className="bx bxs-map" />
+                </MapIcon>
+                Como Chegar
               </FooterLink>
-              <FooterLink href="tel:+551832222682">(18) 3222-2682</FooterLink>
-            </div>
-          </FooterColumn>
-          <FooterColumn>
-            <h4>Localização:</h4>
-            <FooterText>
-              <MapIcon>
-                <i className="bx bxs-map" />
-              </MapIcon>
-              Rua Antônio Furtado de Miranda, 40 - Vila Industrial
-            </FooterText>
-            <FooterText>Presidente Prudente - SP</FooterText>
-            <FooterLink href={LOCATION} target="_blank">
-              <MapIcon>
-                <i className="bx bxs-map" />
-              </MapIcon>
-              Como Chegar
-            </FooterLink>
-          </FooterColumn>
-          <FooterColumn>
-            <h4>Cursos Técnicos</h4>
-            <Link to="/cursos/1">
-              <FooterLink>Técnico em Enfermagem</FooterLink>
-            </Link>
-            <Link to="/cursos/2">
-              <FooterLink>Técnico em Farmácia</FooterLink>
-            </Link>
-            <Link to="/cursos/3">
-              <FooterLink>Técnico em Radiologia</FooterLink>
-            </Link>
-          </FooterColumn>
-          <FooterColumn>
-            <h4>Institucional</h4>
-            <Link to="/">
-              <FooterLink>Quem Somos</FooterLink>
-            </Link>
-            <Link to="/contato">
-              <FooterLink>Fale Conosco</FooterLink>
-            </Link>
-            <Link to={LINK_SAENET} target="_blank">
-              <FooterLink>Área do Aluno*</FooterLink>
-            </Link>
-            <Link to="/politica">
-              <FooterLink>Política de Privacidade</FooterLink>
-            </Link>
-          </FooterColumn>
-        </FooterContainer>
+            </FooterColumn>
+            <FooterColumn>
+              <h4>Cursos Técnicos</h4>
+              <Link to="/cursos/1">
+                <FooterLink>Técnico em Enfermagem</FooterLink>
+              </Link>
+              <Link to="/cursos/2">
+                <FooterLink>Técnico em Farmácia</FooterLink>
+              </Link>
+              <Link to="/cursos/3">
+                <FooterLink>Técnico em Radiologia</FooterLink>
+              </Link>
+            </FooterColumn>
+            <FooterColumn>
+              <h4>Institucional</h4>
+              <Link to="/">
+                <FooterLink>Quem Somos</FooterLink>
+              </Link>
+              <Link to="/contato">
+                <FooterLink>Fale Conosco</FooterLink>
+              </Link>
+              <Link to={LINK_SAENET} target="_blank">
+                <FooterLink>Área do Aluno*</FooterLink>
+              </Link>
+              <Link to="/politica">
+                <FooterLink>Política de Privacidade</FooterLink>
+              </Link>
+            </FooterColumn>
+          </FooterContainer>
+          <Copy className="mt-2">Colégio Criarte - &copy; 2022</Copy>
+        </>
       )}
     </footer>
   );

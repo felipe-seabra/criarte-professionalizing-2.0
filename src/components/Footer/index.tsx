@@ -1,4 +1,4 @@
-import React, { CSSProperties, useState } from 'react';
+import React, { CSSProperties, useEffect, useState } from 'react';
 import { useLocation, Link } from 'react-router-dom';
 import {
   Container,
@@ -27,7 +27,7 @@ function Footer() {
   const ContainerStyle: CSSProperties = { position };
   const location = useLocation();
 
-  React.useEffect(() => {
+  useEffect(() => {
     setPosition(
       location.pathname === '/' || location.pathname === '/cursos'
         ? 'absolute'
@@ -80,15 +80,9 @@ function Footer() {
             </FooterColumn>
             <FooterColumn>
               <h4>Cursos Técnicos:</h4>
-              <Link to="/cursos/1">
-                <FooterLink>Técnico em Enfermagem</FooterLink>
-              </Link>
-              <Link to="/cursos/2">
-                <FooterLink>Técnico em Farmácia</FooterLink>
-              </Link>
-              <Link to="/cursos/3">
-                <FooterLink>Técnico em Radiologia</FooterLink>
-              </Link>
+              <FooterLink href="/cursos/1">Técnico em Enfermagem</FooterLink>
+              <FooterLink href="/cursos/2">Técnico em Farmácia</FooterLink>
+              <FooterLink href="/cursos/3">Técnico em Radiologia</FooterLink>
             </FooterColumn>
             <FooterColumn>
               <h4>Institucional:</h4>

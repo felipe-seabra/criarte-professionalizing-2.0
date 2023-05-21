@@ -55,6 +55,7 @@ export const FooterColumn = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   width: 250px;
   min-height: 150px;
   margin: 10px;
@@ -62,6 +63,7 @@ export const FooterColumn = styled.div`
 
   @media screen and (min-width: 768px) {
     align-items: flex-start;
+    text-align: left;
 
     // &:not(:last-child)::after {
     //   content: '';
@@ -82,6 +84,7 @@ export const FooterText = styled.p`
 `;
 
 export const FooterLink = styled.a`
+  cursor: pointer;
   color: ${(props) => props.theme.colors.text};
   font-size: 0.9rem;
   text-decoration: none;

@@ -6,5 +6,5 @@ interface Props {
 
 export default function RequiredField(props: Props) {
   const { isValid } = props;
-  return !isValid ? <p className="required-field">Campo obrigaório!</p> : null;
+  return !isValid ? <p className="required-field">Campo obrigatório!</p> : null;
 }

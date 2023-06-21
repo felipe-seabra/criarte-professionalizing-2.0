@@ -1,5 +1,6 @@
 export { default as logoWhite } from './logos/logo-white.png';
 export { default as logoBlue } from './logos/logo-blue.png';
+export { default as logoC } from './logos/logo-c.png';
 
 export { default as bgHome } from './backgrounds/bg-home.jpg';
 

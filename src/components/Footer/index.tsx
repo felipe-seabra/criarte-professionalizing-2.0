@@ -9,6 +9,7 @@ import {
   FooterText,
   MapIcon
 } from './styles';
+import ChatPopup from '../ChatPopup';
 
 type Position = 'absolute' | 'relative';
 
@@ -103,6 +104,7 @@ function Footer() {
           <Copy className="mt-2">Colégio Criarte - &copy; 2022</Copy>
         </>
       )}
+      <ChatPopup />
     </footer>
   );
 }

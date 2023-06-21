@@ -35,6 +35,9 @@ function ChatPopup() {
     const whatsappURL = `https://api.whatsapp.com/send?phone=5518981029767&text=${encodedMessage}`;
 
     window.open(whatsappURL, '_blank');
+
+    handleClosePopup();
+    setMessage('');
   };
 
   const containerStyle = {

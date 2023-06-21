@@ -21,8 +21,8 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     position: fixed;
-    bottom: 50px;
-    right: 20px;
+    bottom: 80px;
+    right: 15px;
     z-index: 99;
     border: 2px solid ${(props) => props.theme.colors.secundary};
     outline: none;

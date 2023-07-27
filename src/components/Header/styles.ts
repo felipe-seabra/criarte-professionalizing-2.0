@@ -6,7 +6,7 @@ export const Container = styled.div`
   width: 100%;
   padding-left: 30px;
   text-align: right;
-  padding-right: ${window.matchMedia('(max-width: 768px)').matches ? '2em' : '30px'};
+  padding-right: 30px;
   z-index: 999;
   
   header {
@@ -69,7 +69,25 @@ export const Container = styled.div`
   }
 
   .navbar-toggler {
-    background: ${(props) => props.theme.colors.secundary};
+    border: none;
+    opacity: 1;
+    transition: 0.4s;
+    background-color: ${(props) => props.theme.colors.secundary};
+  }
+
+  .navbar-toggler:hover {
+    opacity: 0.5;
+  }
+
+  @media (max-width: 768px) {
+    padding-right: 2em;
+  }
+
+  @media screen and (max-width: 991px) {
+    .navlink,
+    .header__switch {
+      margin-top: 0.3rem;
+    }
   }
 }
 `;

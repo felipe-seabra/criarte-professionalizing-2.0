@@ -21,7 +21,7 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     position: fixed;
-    bottom: 80px;
+    bottom: 300px;
     right: 15px;
     z-index: 99;
     border: 2px solid ${(props) => props.theme.colors.secundary};

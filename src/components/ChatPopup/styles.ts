@@ -55,12 +55,6 @@ export const Icon = styled.i`
   font-size: 20px;
 `;
 
-export const IconSend = styled.i`
-  margin: 0 auto;
-  color: ${primaryColor} !important;
-  font-size: 25px;
-`;
-
 export const PopupContent = styled.div`
   color: white;
 `;
@@ -101,12 +95,19 @@ export const Input = styled.input`
 
 export const SendButton = styled.button`
   position: absolute;
-  top: 2px;
-  right: 0;
-  background: none;
+  top: 5px;
+  right: 5px;
+  background: ${primaryColor};
+  color: white;
+  border-radius: 8px;
   border: none;
-  padding: 5px 10px;
+  padding: 5px 8px;
   cursor: pointer;
+  transition: background 0.4s;
+
+  &:hover {
+    background: ${(props) => props.theme.colors.secundary};
+  }
 `;
 
 export const LogoContainer = styled.div`
